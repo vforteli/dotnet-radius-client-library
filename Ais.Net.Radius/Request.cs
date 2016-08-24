@@ -21,6 +21,11 @@ namespace Ais.Net.Radius
             _packet.Attributes.Add(new StringAttribute(AttributeType.UserName, userName));
         }
 
+        public Request(PacketType packetType)
+        {
+            _packet = new Packet(packetType);
+        }
+
         /// <summary>
         /// Represents radius packet include all data.
         /// </summary>

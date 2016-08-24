@@ -18,6 +18,7 @@ namespace Ais.Net.Radius
         AccessChallenge = 11,
         StatusServer = 12,
         StatusClient = 13,
-        Reserved = 255,
+        Disconnect = 40,
+        Reserved = 255        
     }
 }

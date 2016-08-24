@@ -203,7 +203,7 @@ namespace Ais.Net.Radius
             //hash value is stored in the Authenticator field of the
             //Accounting-Request packet.
             //(C) RFC 2866
-            if (PacketType == PacketType.AccountingRequest)
+            if (PacketType == PacketType.AccountingRequest || PacketType == PacketType.Disconnect)
             {
                 var ra = new byte[RequestAuthenticatorLength];
                 Array.Copy(ra, 0, result, 4, ra.Length);
